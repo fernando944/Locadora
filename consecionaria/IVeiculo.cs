@@ -14,7 +14,7 @@ namespace consecionaria
         public double ValorDiario { get; set; }
 
 
-        public  decimal Aluguel(int dias);
+        public  double Aluguel(int dias);
         
 
     }

@@ -6,9 +6,17 @@ using System.Threading.Tasks;
 
 namespace consecionaria
 {
-    internal class Moto : Veiculos, IVeiculo
+    public class Moto : Veiculos, IVeiculo
     {
-        public Moto (string Modelo, string Marca, int Ano, double ValorDiario) : base (Modelo, Marca, Ano, ValorDiario) { }
-    }
+        public Moto(string modelo, string marca, int ano, double valorDiario) : base(modelo, marca, ano, valorDiario)
+        {
+            
+        }
 
+
+        public override double Aluguel(int dias)
+        {
+            return ValorDiario * dias * 0.9;
+        }
+    }
 }

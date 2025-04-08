@@ -20,14 +20,11 @@ namespace consecionaria
         public string Marca { get; set; }
         public int Ano { get; set; }
         public double ValorDiario { get; set; }
-        public double aluguel(int dias)
-        {
-            return ValorDiario * dias;
-        }
+       
 
-        public decimal Aluguel(int dias)
+        public virtual double Aluguel(int dias)
         {
-            throw new NotImplementedException();
+           return ValorDiario*dias ;
         }
 
         public void MostrarVeiculos()

@@ -12,5 +12,10 @@ namespace consecionaria
         {
         }
 
+        public override double Aluguel(int dias)
+        {
+            return ValorDiario * dias;
+        }
+
     }
 }
